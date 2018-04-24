@@ -1,1 +1,1 @@
-install.packages("odbc")
+install.packages("odbc", dependencies=TRUE)
