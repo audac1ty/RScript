@@ -1,3 +1,4 @@
+#!
 sudo apt-get install unixodbc* -y
 sudo su 
 curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add -
