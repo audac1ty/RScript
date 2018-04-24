@@ -9,7 +9,7 @@ sudo chown root /etc/apt/sources.list.d/prod.list
 sudo chgrp root /etc/apt/sources.list.d/prod.list
 sudo chmod g-w /etc/apt/sources.list.d/prod.list
 sudo apt-get update
-sudo ACCEPT_EULA=Y apt-get install msodbcsql17 -y
+sudo ACCEPT_EULA=Y apt-get install msodbcsql17 -y --allow-unauthenticated
 sudo chmod o+w /usr/lib64/microsoft-r/3.3/lib64/R/etc
 sudo sed "s/^CXX1X.=.*$/CXX1X = gcc -std=c++0x/" /usr/lib64/microsoft-r/3.3/lib64/R/etc/Makeconf > /usr/lib64/microsoft-r/3.3/lib64/R/etc/Makeconf~
 sudo rm /usr/lib64/microsoft-r/3.3/lib64/R/etc/Makeconf
